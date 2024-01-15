@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  border: solid 1px;
+  padding: 40px;
+  width: 250px;
+  margin-top: 50px;
+  margin-left: 250px;
+  background-color: rgb(252, 250, 250);
+}
+
+h1 {
+  text-align: center;
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+}
+
+.cpf {
+  width: 100px;
+ 
+}
+
+.numero {
+  width: 70px;
+}
+
+.tel {
+  width: 100px;
+}
+
+.estado {
+    width: 130px;
+}
+
+
+
+section {
+  width: 120px;
+}
+
+button {
+margin-top: 15px;
+margin-left: 130px;
+padding: 3px;
+cursor: pointer;
+background-color: chartreuse;
+border-color: aliceblue;
+border-radius: 5px;
+}
