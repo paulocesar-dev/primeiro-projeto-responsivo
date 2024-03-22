@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-logo {
+    height: 200px;
+}
+
+button {
+    color: #ffffff;
+    background-color: #c51111;
+    border-radius: 3px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+button:hover {
+    opacity: 0.7;
+    height: 60px;
+    width: 210px;
+    transition: 0.2s;
+}
+
+
+.logo-m-l {
+    height: 500px;
+}
+
+body {
+
+    height: 100vh;
+
+}
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    height: 100vh;
+}
+
+
+
+.section-left {
+    width: 40%;
+
+}
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+}
+
+video {
+
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+p {
+    color: #ffffff;
+    line-height: 35px;
+    font-size: 24px;
+}
+
+.link-whatsapp img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.header img {
+    height: 60px;
+}
+
+.header a {
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header a:hover {
+    color: #c51111;
+    font-size: 28px;
+    transition: 0.3s ease-in-out;
+}
+
+.formulario-fale-conosco {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    top: 30%;
+    left: -300px;
+    position: fixed;
+    transition: left 1s ease-in-out;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18d80f;
+}
+
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18d80f;
+    height: 100px;
+    width: 270px;
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+@media(max-width: 1100px){
+
+p{
+    display: none;
+}
+
+.caixa-mae {
+    flex-direction: column;
+    justify-content: flex-start;
+  
+}
+
+.section-left {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+
+}
+
+.logo-m-l {
+    width: 80vw;
+    height: auto;
+    margin-top: 3
+    0px;
+}
+
+
+
+
+.header img {
+   display: none;
+}
+
+ .header {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+.header a {
+    font-size: 20px;
+   
+}
+
+
+}
+
+
+
+
+
