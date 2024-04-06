@@ -2,9 +2,9 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buscador de Contatos</title>
 </head>
 
 <body>
@@ -25,20 +25,28 @@
         { name: "Sarah", number: "(84) 99999-0202" },
         { name: "Lara", number: "(84) 99999-0303" },
         { name: "Paulo Filho", number: "(84) 99999-0404" },
+
     ]
 
     function search() {
 
-        for (let i = 0; i < contacts.length; i++)
+        let i = 0;
+        let contactFound = false;
 
+        while (i < contacts.length) {
             if (input.value.toLowerCase() === contacts[i].name.toLowerCase()) {
-                p.innerHTML = `Contato Encontrado Nome:${contacts[i].name} Tel:${contacts[i].number}`
-
-                break
-            } else {
-                p.innerHTML = "Contato Não Encontrado, Tente Novamente!"
+                p.innerHTML = `Contato Encontrado Nome:${contacts[i].name} Tel:${contacts[i].number}`;
+                contactFound = true;
+                break;
             }
-       
+            i++
+
+        }
+
+        if (!contactFound) {
+            p.innerHTML = "Contato Não Encontrado, Tente Novamente!";
+        }
+
     }
 
 </script>
